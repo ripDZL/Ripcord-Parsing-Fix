@@ -13,7 +13,8 @@ It will backup the original file and patch specific bytes at fixed offsets.
 6. Enjoy Ripcord once again!
 
 ## 🛠 Building from source
-Requirements: ppyinstaller
+You can download the patcher.py and place inside the **same folder** as `Ripcord.exe and run patcher.py  to get the same result if you have python installed
+OR Build a EXE VIA PPYINSTALLER (Requirements: ppyinstaller)
 install via powershell via:  pip install pyinstaller 
 
 Download patcher.py  and run "pyinstaller --onefile patcher.py" from a command prompt window in the same directory. Should make a patcher.exe in a folder called dist in the same directory.
