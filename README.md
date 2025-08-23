@@ -17,7 +17,7 @@ You can achieve the same result as `patcher.exe` by running the Python script di
 ### Option 1: Run the Python Script
 - Download `patcher.py` and place it in the **same folder** as `Ripcord.exe`.
 - Ensure Python is installed.
-- Run `patcher.py` from the command line.
+- Run `patcher.py` from the command line or double click patcher.py to run patcher
 
 ### Option 2: Build the Executable
 - **Requirements**: `pyinstaller` (install via PowerShell with `pip install pyinstaller`).
