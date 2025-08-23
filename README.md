@@ -1,8 +1,5 @@
 # Ripcord-Parsing-Fix (WINDOWS ONLY)
 Fixes Ripcord’s “Parsing: Invalid map key” error by patching specific bytes in the executable
-
-# Ripcord Fixed-Offset Patcher
-
 A small Windows patcher for Ripcord.exe.  
 It will backup the original file and patch specific bytes at fixed offsets.
 
