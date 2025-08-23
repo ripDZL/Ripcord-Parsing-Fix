@@ -15,8 +15,6 @@ If you just want to fix Ripcord without building anything, follow these simple s
 8. Run Ripcord, and you should now be able to connect to Discord again.
 9. Enjoy!
 
-**Note**: If `patcher.exe` doesn’t work, ensure it’s in the same folder as `Ripcord.exe`. Contact me via GitHub if you need help.
-
 ## 🛠 Building the Fix Yourself
 If you want to create `patcher.exe` from scratch (or the prebuilt version isn’t working), you can build it using Rust, a programming tool. Don’t worry if you’re new to this—I’ll guide you step-by-step. This creates the same `patcher.exe` as the prebuilt version.
 
