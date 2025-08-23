@@ -1,7 +1,7 @@
 # Ripcord Parsing Fix (Windows Only)
 Patches the "Parsing: Invalid map key" error in Ripcord by modifying specific bytes in the executable.
 
-This tool creates a backup of the original `Ripcord.exe` file and applies the patch at fixed offsets.
+This tool creates a backup of the original `Ripcord.exe` file and applies patches at offsets `0xB8FBF` and `0xB8FC0`.
 
 ## 🔧 Usage
 1. Download the latest `patcher.exe` from the [Releases](https://github.com/ripDZL/Ripcord-Parsing-Fix/releases) tab.
@@ -12,16 +12,30 @@ This tool creates a backup of the original `Ripcord.exe` file and applies the pa
 6. Enjoy using Ripcord!
 
 ## 🛠 Building from Source
-You can achieve the same result as `patcher.exe` by running the Python script directly or building your own executable.
+The patcher is written in Rust, producing a small, efficient executable. Follow these steps to build it yourself.
 
-### Option 1: Run the Python Script
-- Download `patcher.py` and place it in the **same folder** as `Ripcord.exe`.
-- Ensure Python is installed.
-- Run `patcher.py` from the command line or double click patcher.py to run patcher
+### Requirements
+- [Rust](https://rustup.rs/) (install via `rustup-init.exe` for Windows).
 
-### Option 2: Build the Executable
-- **Requirements**: `pyinstaller` (install via PowerShell with `pip install pyinstaller`).
-- Download `patcher.py`.
-- Open a command prompt in the same directory as `patcher.py`.
-- Run `pyinstaller --onefile patcher.py`.
-- Find the generated `patcher.exe` in the `dist/` folder.
+### Steps
+```bash
+# 1. Download src/main.rs from the repository (https://github.com/ripDZL/Ripcord-Parsing-Fix).
+# 2. Create a new Rust project:
+cargo init --bin
+# 3. Replace src/main.rs with the downloaded file.
+# 4. Build the executable in release mode for a smaller binary:
+cargo build --release
+# 5. Find patcher.exe in target/release/ (rename from ripcord-patcher.exe if desired).
+# 6. Optional: Minimize the executable size by adding the following to Cargo.toml before building:
+cat <<EOT >> Cargo.toml
+[profile.release]
+opt-level = 'z'  # Optimize for size
+lto = true       # Enable link-time optimization
+codegen-units = 1
+panic = 'abort'  # Remove panic handling code
+strip = true     # Strip symbols
+EOT
+# 7. Rebuild with cargo build --release.
+# 8. Optional: Install UPX (https://upx.github.io/) and run:
+upx --best target/release/patcher.exe
+# 9. Place patcher.exe in the same folder as Ripcord.exe and run it.
