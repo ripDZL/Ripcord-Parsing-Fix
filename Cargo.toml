@@ -1,0 +1,14 @@
+[package]
+name = "ripcord-patcher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# No external dependencies needed
+
+[profile.release]
+opt-level = 'z'  # Optimize for size
+lto = true       # Enable link-time optimization
+codegen-units = 1
+panic = 'abort'  # Remove panic handling code
+strip = true     # Strip symbols
