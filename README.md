@@ -6,7 +6,7 @@ This tool fixes the "Parsing: Invalid map key" error in Ripcord, a Discord clien
 If you just want to fix Ripcord without building anything, follow these simple steps:
 
 1. Go to the [Releases page](https://github.com/ripDZL/Ripcord-Parsing-Fix/releases).
-2. Click on the latest release (e.g., "Rust Patcher v1.0.0").
+2. Click on the latest release
 3. Download the `patcher.exe` file.
 4. Find your `Ripcord.exe` file (usually in the folder where Ripcord is installed).
 5. Move `patcher.exe` to the same folder as `Ripcord.exe`.
