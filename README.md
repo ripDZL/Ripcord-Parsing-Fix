@@ -10,6 +10,7 @@ It will backup the original file and patch specific bytes at fixed offsets.
 3. Run `patcher.exe`.
 4. Your original Ripcord.exe will be backed up inside a `backup/` folder.
 5. You shouldnt now be able to connect discord again through ripcord.
+6. Enjoy Ripcord once again!
 
 ## 🛠 Building from source
-Download patcher.py and run "pyinstaller --onefile patcher.py" in the same directory. Should make a patcher.exe in a folder called dist in the same directory.
+Download patcher.py  and run "pyinstaller --onefile patcher.py" in the same directory. Should make a patcher.exe in a folder called dist in the same directory.
