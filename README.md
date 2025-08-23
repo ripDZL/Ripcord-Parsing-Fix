@@ -1,20 +1,27 @@
-# Ripcord-Parsing-Fix (WINDOWS ONLY)
-Fixes Ripcord’s “Parsing: Invalid map key” error by patching specific bytes in the executable
+# Ripcord Parsing Fix (Windows Only)
+Patches the "Parsing: Invalid map key" error in Ripcord by modifying specific bytes in the executable.
 
-
-It will backup the original file and patch specific bytes at fixed offsets.
+This tool creates a backup of the original `Ripcord.exe` file and applies the patch at fixed offsets.
 
 ## 🔧 Usage
-1. Download the latest `patcher.exe` from the releases tab 
-2. Place `patcher.exe` inside the **same folder** as `Ripcord.exe`.
+1. Download the latest `patcher.exe` from the [Releases](https://github.com/ripDZL/Ripcord-Parsing-Fix/releases) tab.
+2. Place `patcher.exe` in the **same folder** as `Ripcord.exe`.
 3. Run `patcher.exe`.
-4. Your original Ripcord.exe will be backed up inside a `backup/` folder.
-5. You shouldnt now be able to connect discord again through ripcord.
-6. Enjoy Ripcord once again!
+4. The original `Ripcord.exe` will be backed up in a `backup/` folder.
+5. You should now be able to connect to Discord via Ripcord again.
+6. Enjoy using Ripcord!
 
-## 🛠 Building from source
-You can download the patcher.py and place inside the **same folder** as `Ripcord.exe and run patcher.py  to get the same result if you have python installed
-OR Build a EXE VIA PPYINSTALLER (Requirements: ppyinstaller)
-install via powershell via:  pip install pyinstaller 
+## 🛠 Building from Source
+You can achieve the same result as `patcher.exe` by running the Python script directly or building your own executable.
 
-Download patcher.py  and run "pyinstaller --onefile patcher.py" from a command prompt window in the same directory. Should make a patcher.exe in a folder called dist in the same directory.
+### Option 1: Run the Python Script
+- Download `patcher.py` and place it in the **same folder** as `Ripcord.exe`.
+- Ensure Python is installed.
+- Run `patcher.py` from the command line.
+
+### Option 2: Build the Executable
+- **Requirements**: `pyinstaller` (install via PowerShell with `pip install pyinstaller`).
+- Download `patcher.py`.
+- Open a command prompt in the same directory as `patcher.py`.
+- Run `pyinstaller --onefile patcher.py`.
+- Find the generated `patcher.exe` in the `dist/` folder.
