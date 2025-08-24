@@ -6,7 +6,7 @@
 
 # Ripcord Parsing Fix (Windows Only)
 
-This tool fixes the "Parsing: Invalid map key" error in Ripcord, a Discord client, by updating specific parts of the `Ripcord.exe` file. It automatically backs up your original `Ripcord.exe` before making changes, so your file is safe.
+This fixes the "Parsing: Invalid map key" error in Ripcord, a Discord client, by updating specific parts of the `Ripcord.exe` file. It automatically backs up your original `Ripcord.exe` before making changes, so your file is safe.
 
 ## 🔧 How to Use the Prebuilt Fix
 If you just want to fix Ripcord without building anything, follow these simple steps:
