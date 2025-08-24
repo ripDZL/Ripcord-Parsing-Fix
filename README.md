@@ -1,6 +1,8 @@
-#FOUND VALES BY MUFFINLORD (DISCORD)
-#Credit:GROK
-#i dont code so i had grok drum up a rust patch
+#𝐅𝐎𝐔𝐍𝐃 𝐕𝐀𝐋𝐄𝐒 𝐁𝐘 𝐌𝐔𝐅𝐅𝐈𝐍𝐋𝐎𝐑𝐃 (𝐃𝐈𝐒𝐂𝐎𝐑𝐃)    
+
+#𝐂𝐎𝐃𝐄 𝐂𝐑𝐄𝐃𝐈𝐓:𝐆𝐑𝐎𝐊    
+
+#𝐈 𝐃𝐎𝐍𝐓 𝐂𝐎𝐃𝐄 𝐒𝐎 𝐈 𝐇𝐀𝐃 𝐆𝐑𝐎𝐊 𝐃𝐑𝐔𝐌 𝐔𝐏 𝐀 𝐑𝐔𝐒𝐓 𝐏𝐀𝐓𝐂𝐇
 
 # Ripcord Parsing Fix (Windows Only)
 
