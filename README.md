@@ -52,7 +52,7 @@ cargo build --release
 
 # 6. Find the patcher:
 #    - Go to the target/release folder inside your project folder.
-#    - Look for ripcord-patcher.exe.
+#    - Look for patcher.exe.
 #    - Rename it to patcher.exe (right-click, select "Rename").
 
 # 7. Optional: Make the file smaller:
