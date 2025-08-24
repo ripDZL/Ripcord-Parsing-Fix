@@ -1,3 +1,7 @@
+#FOUND VALES BY MUFFINLORD (DISCORD)
+#Credit:GROK
+#i dont code so i had grok drum up a rust patch
+
 # Ripcord Parsing Fix (Windows Only)
 
 This tool fixes the "Parsing: Invalid map key" error in Ripcord, a Discord client, by updating specific parts of the `Ripcord.exe` file. It automatically backs up your original `Ripcord.exe` before making changes, so your file is safe.
