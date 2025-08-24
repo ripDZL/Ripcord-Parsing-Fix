@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <direct.h> // For _mkdir on Windows
 
-// Patch offsets and bytes from patcher.py
+// Patch offsets and bytes 
 const long OFFSETS[] = {0xB8FBF, 0xB8FC0};
 const unsigned char PATCH_BYTES[] = {0xEB, 0x80};
 const int PATCH_COUNT = 2;
@@ -78,4 +78,5 @@ int main() {
     fclose(file);
     printf("Patching complete. You can now use Ripcord.exe.\n");
     return 0;
+
 }
