@@ -53,18 +53,8 @@ cargo build --release
 # 6. Find the patcher:
 #    - Go to the target/release folder inside your project folder.
 #    - Look for patcher.exe.
-#    - Rename it to patcher.exe (right-click, select "Rename").
 
-# 7. Optional: Make the file smaller:
-#    - Download UPX from https://upx.github.io/ (click "Downloads" and get the Windows version).
-#    - Unzip UPX and place upx.exe in the target/release folder.
-#    - In the Command Prompt, navigate to target/release:
-cd target\release
-#    - Type:
-upx --best patcher.exe
-#    - This shrinks patcher.exe to save space.
-
-# 8. Use the patcher:
+# 7. Use the patcher:
 #    - Move patcher.exe to the same folder as Ripcord.exe.
 #    - Double-click patcher.exe to run it.
 #    - Check that a backup folder with Ripcord.exe appears.
